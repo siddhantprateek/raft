@@ -161,6 +161,23 @@ func main() {
 }
 ```
 
+## To Run the application
+
+## Running the Application
+
+- First, ensure that your Go modules are up-to-date by running:
+
+```bash
+    go mod tidy
+```
+
+- To run the application and store the output in a log file, use the following command:
+
+```bash
+	go run main.go > output.log 2>&1
+```
+
+
 ### Reference 
 
 - [Raft Research Paper](https://raft.github.io/raft.pdf)
