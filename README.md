@@ -161,8 +161,6 @@ func main() {
 }
 ```
 
-## To Run the application
-
 ## Running the Application
 
 - First, ensure that your Go modules are up-to-date by running:
