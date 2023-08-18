@@ -168,19 +168,19 @@ func main() {
 - First, ensure that your Go modules are up-to-date by running:
 
 ```bash
-    go mod tidy
+go mod tidy
 ```
 
 - To run the application and store the output in a log file, use the following command:
 
 ```bash
-	go run main.go > output.log 2>&1
+go run main.go > output.log 2>&1
 ```
 
 - If you are using Docker, you can run your application in a container. Follow these steps:
 	-  Build a Docker image for your application
 	- Run the Docker container and store the output in a log file
-	
+
 ```bash
 docker build --tag raft .     
 docker run -it raft > output.log 2>&1  
