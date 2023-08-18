@@ -1,184 +1,184 @@
-2023/08/17 11:24:40 ID: 4  Run follower loop
-2023/08/17 11:24:40 ID: 1  Run follower loop
-2023/08/17 11:24:40 1 2 3 4 5
-2023/08/17 11:24:40 ID: 2  Run follower loop
-2023/08/17 11:24:40 ID: 3  Run follower loop
-2023/08/17 11:24:40 ID: 5  Run follower loop
-2023/08/17 11:24:40 Send msg from: 1  send to 2  val: {1 x<-1}  typ: 3
-2023/08/17 11:24:40 Send msg from: 1  send to 3  val: {1 x<-1}  typ: 3
-2023/08/17 11:24:40 Send msg from: 1  send to 4  val: {1 x<-1}  typ: 3
-2023/08/17 11:24:40 Send msg from: 1  send to 5  val: {1 x<-1}  typ: 3
-2023/08/17 11:24:40 note: 1  change role from  1  to  2
-2023/08/17 11:24:40 Now ID: 1  become candidate-> 2
-2023/08/17 11:24:40 Assign value to server 1 
-2023/08/17 11:24:40 1 still not leader: 2
-2023/08/17 11:24:40 Recev msg from: 1  send to 5  val: {1 x<-1}  typ: 3
-2023/08/17 11:24:40 Recev msg from: 1  send to 2  val: {1 x<-1}  typ: 3
-2023/08/17 11:24:40 Send msg from: 2  send to 1  val: {1 x<-1}  typ: 4
-2023/08/17 11:24:40 Send msg from: 5  send to 1  val: {1 x<-1}  typ: 4
-2023/08/17 11:24:40 Recev msg from: 1  send to 3  val: {1 x<-1}  typ: 3
-2023/08/17 11:24:40 Send msg from: 3  send to 1  val: {1 x<-1}  typ: 4
-2023/08/17 11:24:40 Recev msg from: 2  send to 1  val: {1 x<-1}  typ: 4
-2023/08/17 11:24:40 Recev msg from: 1  send to 4  val: {1 x<-1}  typ: 3
-2023/08/17 11:24:40 Send msg from: 4  send to 1  val: {1 x<-1}  typ: 4
-2023/08/17 11:24:40 ID: 3  Run follower loop
-2023/08/17 11:24:40 ID: 2  Run follower loop
-2023/08/17 11:24:40 ID: 4  Run follower loop
-2023/08/17 11:24:40 ID: 1  Run candidate loop
-2023/08/17 11:24:40 Recev msg from: 5  send to 1  val: {1 x<-1}  typ: 4
-2023/08/17 11:24:40 ID: 5  Run follower loop
-2023/08/17 11:24:40 [candidate]: has  1  still not reach  3
-2023/08/17 11:24:40 ID: 1  Run candidate loop
-2023/08/17 11:24:40 Recev msg from: 3  send to 1  val: {1 x<-1}  typ: 4
-2023/08/17 11:24:40 [candidate]: has  2  still not reach  3
-2023/08/17 11:24:40 ID: 1  Run candidate loop
-2023/08/17 11:24:40 Recev msg from: 4  send to 1  val: {1 x<-1}  typ: 4
-2023/08/17 11:24:40 [candidate]: has  3  still not reach  3
-2023/08/17 11:24:40 note: 1  change role from  2  to  3
-2023/08/17 11:24:40 Send msg from: 1  send to 2  val: {0 }  typ: 5
-2023/08/17 11:24:40 Send msg from: 1  send to 3  val: {0 }  typ: 5
-2023/08/17 11:24:40 Send msg from: 1  send to 4  val: {0 }  typ: 5
-2023/08/17 11:24:40 Send msg from: 1  send to 5  val: {0 }  typ: 5
-2023/08/17 11:24:40 Recev msg from: 1  send to 5  val: {0 }  typ: 5
-2023/08/17 11:24:40 Recev msg from: 1  send to 2  val: {0 }  typ: 5
-2023/08/17 11:24:40 Recev msg from: 1  send to 4  val: {0 }  typ: 5
-2023/08/17 11:24:40 Recev msg from: 1  send to 3  val: {0 }  typ: 5
-2023/08/17 11:24:40 ID: 2  Run follower loop
-2023/08/17 11:24:40 ID: 1  Run leader loop
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:40 Recev msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 2  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 Recev msg from: 2  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 3  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 3  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 4  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 4  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 5  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 5  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 5  Run follower loop
-2023/08/17 11:24:40 ID: 2  Run follower loop
-2023/08/17 11:24:40 ID: 1  Run leader loop
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:40 Recev msg from: 3  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 Recev msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 5  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 Recev msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 2  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 3  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 3  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 4  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 4  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 4  Run follower loop
-2023/08/17 11:24:40 ID: 1  Run leader loop
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:40 Recev msg from: 4  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 Recev msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 4  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 5  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 5  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 2  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 2  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 3  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 3  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 5  Run follower loop
-2023/08/17 11:24:40 ID: 1  Run leader loop
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:40 Send msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:40 Recev msg from: 5  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 3  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 3  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 4  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 4  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 Recev msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 5  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:40 ID: 2  Run follower loop
-2023/08/17 11:24:40 Recev msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:40  size of datalog: 0
-2023/08/17 11:24:40 Send msg from: 2  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 ID: 2  Run follower loop
-2023/08/17 11:24:41 ID: 3  Run follower loop
-2023/08/17 11:24:41 ID: 1  Run leader loop
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:41 ID: 4  Run follower loop
-2023/08/17 11:24:41 ID: 5  Run follower loop
-2023/08/17 11:24:41 Send msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:41 Send msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:41 Send msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:41 Recev msg from: 5  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 Recev msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 5  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 Recev msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 2  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 Recev msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 3  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 Recev msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 4  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 ID: 4  Run follower loop
-2023/08/17 11:24:41 ID: 2  Run follower loop
-2023/08/17 11:24:41 ID: 5  Run follower loop
-2023/08/17 11:24:41 ID: 3  Run follower loop
-2023/08/17 11:24:41 ID: 1  Run leader loop
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:41 Send msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:41 Send msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:41 Send msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:41 Recev msg from: 2  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 Recev msg from: 1  send to 3  val: {0 }  typ: 1
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 3  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 Recev msg from: 1  send to 2  val: {0 }  typ: 1
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 2  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 Recev msg from: 1  send to 4  val: {0 }  typ: 1
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 4  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 Recev msg from: 1  send to 5  val: {0 }  typ: 1
-2023/08/17 11:24:41  size of datalog: 0
-2023/08/17 11:24:41 Send msg from: 5  send to 1  val: {0 }  typ: 2
-2023/08/17 11:24:41 1 become leader done.
+2023/08/18 10:19:17 ID: 5  Run follower loop
+2023/08/18 10:19:17 ID: 3  Run follower loop
+2023/08/18 10:19:17 ID: 1  Run follower loop
+2023/08/18 10:19:17 1 2 3 4 5
+2023/08/18 10:19:17 Send msg from: 1  send to 2  val: {1 x<-1}  typ: 3
+2023/08/18 10:19:17 Send msg from: 1  send to 3  val: {1 x<-1}  typ: 3
+2023/08/18 10:19:17 Send msg from: 1  send to 4  val: {1 x<-1}  typ: 3
+2023/08/18 10:19:17 Send msg from: 1  send to 5  val: {1 x<-1}  typ: 3
+2023/08/18 10:19:17 note: 1  change role from  1  to  2
+2023/08/18 10:19:17 Now ID: 1  become candidate-> 2
+2023/08/18 10:19:17 Assign value to server 1 
+2023/08/18 10:19:17 1 still not leader: 2
+2023/08/18 10:19:17 Recev msg from: 1  send to 5  val: {1 x<-1}  typ: 3
+2023/08/18 10:19:17 Send msg from: 5  send to 1  val: {1 x<-1}  typ: 4
+2023/08/18 10:19:17 Recev msg from: 5  send to 1  val: {1 x<-1}  typ: 4
+2023/08/18 10:19:17 ID: 2  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 2  val: {1 x<-1}  typ: 3
+2023/08/18 10:19:17 Send msg from: 2  send to 1  val: {1 x<-1}  typ: 4
+2023/08/18 10:19:17 ID: 4  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 4  val: {1 x<-1}  typ: 3
+2023/08/18 10:19:17 Send msg from: 4  send to 1  val: {1 x<-1}  typ: 4
+2023/08/18 10:19:17 Recev msg from: 1  send to 3  val: {1 x<-1}  typ: 3
+2023/08/18 10:19:17 Send msg from: 3  send to 1  val: {1 x<-1}  typ: 4
+2023/08/18 10:19:17 ID: 2  Run follower loop
+2023/08/18 10:19:17 ID: 3  Run follower loop
+2023/08/18 10:19:17 ID: 4  Run follower loop
+2023/08/18 10:19:17 ID: 1  Run candidate loop
+2023/08/18 10:19:17 ID: 5  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 2  send to 1  val: {1 x<-1}  typ: 4
+2023/08/18 10:19:17 [candidate]: has  1  still not reach  3
+2023/08/18 10:19:17 ID: 1  Run candidate loop
+2023/08/18 10:19:17 Recev msg from: 4  send to 1  val: {1 x<-1}  typ: 4
+2023/08/18 10:19:17 [candidate]: has  2  still not reach  3
+2023/08/18 10:19:17 ID: 1  Run candidate loop
+2023/08/18 10:19:17 Recev msg from: 3  send to 1  val: {1 x<-1}  typ: 4
+2023/08/18 10:19:17 [candidate]: has  3  still not reach  3
+2023/08/18 10:19:17 note: 1  change role from  2  to  3
+2023/08/18 10:19:17 Send msg from: 1  send to 2  val: {0 }  typ: 5
+2023/08/18 10:19:17 Send msg from: 1  send to 3  val: {0 }  typ: 5
+2023/08/18 10:19:17 Send msg from: 1  send to 4  val: {0 }  typ: 5
+2023/08/18 10:19:17 Send msg from: 1  send to 5  val: {0 }  typ: 5
+2023/08/18 10:19:17 Recev msg from: 1  send to 5  val: {0 }  typ: 5
+2023/08/18 10:19:17 Recev msg from: 1  send to 4  val: {0 }  typ: 5
+2023/08/18 10:19:17 Recev msg from: 1  send to 3  val: {0 }  typ: 5
+2023/08/18 10:19:17 Recev msg from: 1  send to 2  val: {0 }  typ: 5
+2023/08/18 10:19:17 ID: 4  Run follower loop
+2023/08/18 10:19:17 ID: 2  Run follower loop
+2023/08/18 10:19:17 ID: 3  Run follower loop
+2023/08/18 10:19:17 ID: 1  Run leader loop
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17 Recev msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 4  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 Recev msg from: 4  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 5  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 5  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 Recev msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 2  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 Recev msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 3  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 3  Run follower loop
+2023/08/18 10:19:17 ID: 1  Run leader loop
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17 Recev msg from: 5  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 4  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 4  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 Recev msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 3  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 2  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 2  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 5  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 5  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 1  Run leader loop
+2023/08/18 10:19:17 ID: 3  Run follower loop
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17 Recev msg from: 2  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 Recev msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 3  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 2  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 2  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 5  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 5  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 4  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 4  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 2  Run follower loop
+2023/08/18 10:19:17 ID: 1  Run leader loop
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17 Recev msg from: 3  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 Recev msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 2  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 3  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 3  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 4  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 4  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 5  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 5  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 5  Run follower loop
+2023/08/18 10:19:17 ID: 4  Run follower loop
+2023/08/18 10:19:17 ID: 3  Run follower loop
+2023/08/18 10:19:17 ID: 1  Run leader loop
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17 Send msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17 Recev msg from: 4  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 Recev msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 3  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 Recev msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 5  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 Recev msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 4  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:17 ID: 2  Run follower loop
+2023/08/18 10:19:17 Recev msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:17  size of datalog: 0
+2023/08/18 10:19:17 Send msg from: 2  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:18 ID: 1  Run leader loop
+2023/08/18 10:19:18  size of datalog: 0
+2023/08/18 10:19:18 Send msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:18 Send msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:18 Send msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:18 Send msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:18 Recev msg from: 3  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:18 ID: 2  Run follower loop
+2023/08/18 10:19:18 Recev msg from: 1  send to 2  val: {0 }  typ: 1
+2023/08/18 10:19:18  size of datalog: 0
+2023/08/18 10:19:18 Send msg from: 2  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:18 ID: 3  Run follower loop
+2023/08/18 10:19:18 Recev msg from: 1  send to 3  val: {0 }  typ: 1
+2023/08/18 10:19:18  size of datalog: 0
+2023/08/18 10:19:18 Send msg from: 3  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:18 ID: 5  Run follower loop
+2023/08/18 10:19:18 Recev msg from: 1  send to 5  val: {0 }  typ: 1
+2023/08/18 10:19:18  size of datalog: 0
+2023/08/18 10:19:18 Send msg from: 5  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:18 ID: 4  Run follower loop
+2023/08/18 10:19:18 Recev msg from: 1  send to 4  val: {0 }  typ: 1
+2023/08/18 10:19:18  size of datalog: 0
+2023/08/18 10:19:18 Send msg from: 4  send to 1  val: {0 }  typ: 2
+2023/08/18 10:19:18 1 become leader done.

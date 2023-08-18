@@ -177,6 +177,14 @@ func main() {
 	go run main.go > output.log 2>&1
 ```
 
+- If you are using Docker, you can run your application in a container. Follow these steps:
+	-  Build a Docker image for your application
+	- Run the Docker container and store the output in a log file
+	
+```bash
+docker build --tag raft .     
+docker run -it raft > output.log 2>&1  
+```
 
 ### Reference 
 
