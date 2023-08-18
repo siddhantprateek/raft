@@ -103,6 +103,63 @@ func (sev *RaftServer) roleChange(newRole Role) {
 	sev.role = newRole
 }
 ```
+---
+
+### Simulation
+
+- A network (`nt`) is created with nodes `1`, `2`, `3`, `4`, and `5`.
+- Five Raft server instances (`nServer1` to `nServer5`) are created, each with a specific `ID`, `role` (Follower), and list of connected `nodes`.
+- The server instances are set to Follower roles initially.
+
+### Leader Election Simulation
+
+- Server 1 (`nServer1`) is assigned an entry in its log using the `AppendEntries` method.
+- A loop is started that checks the role of `nServer1` repeatedly. If it becomes a `leader` within the loop, the loop exits.
+
+Now, let's walk through the leader election process:
+- Server 1 (`nServer1`) is assigned an entry in its log. It is in the Follower state initially.
+- It will start sending RequestVote messages to other nodes because it's a candidate now.
+- As other servers receive the RequestVote message from Server 1, they will respond with AcceptVote messages.
+- Once Server 1 receives AcceptVote messages from a majority of nodes (3 out of 5), it changes its role to Leader and sends WinningVote messages to other nodes to notify them of its victory.
+
+```go
+func main() {
+
+	.
+	.
+	.
+	.
+
+	// rest of the code
+
+	nt := CreateNetwork(1, 2, 3, 4, 5)
+	nServer1 := NewServer(1, Follower, 
+		nt.getNodeNetwork(1), 2, 3, 4, 5)
+	nServer2 := NewServer(2, Follower, 
+		nt.getNodeNetwork(2), 1, 3, 4, 5)
+	nServer3 := NewServer(3, Follower, 
+		nt.getNodeNetwork(3), 2, 1, 4, 5)
+	nServer4 := NewServer(4, Follower, 
+		nt.getNodeNetwork(4), 2, 3, 1, 5)
+	nServer5 := NewServer(5, Follower,
+		nt.getNodeNetwork(5), 2, 3, 1, 5)
+
+	...
+
+	nServer1.AppendEntries(datalog{term: 1, action: "x<-1"})
+	
+	...
+
+	for i := 0; i <= 10; i++ {
+		if nServer1.Whoareyou() == Leader {
+			log.Println("1 become leader done.")
+			return
+		}
+		log.Println("1 still not leader:", nServer1.Whoareyou())
+		time.Sleep(time.Second)
+	}
+}
+```
 
 ### Reference 
 
