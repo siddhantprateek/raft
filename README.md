@@ -184,6 +184,16 @@ docker build --tag raft .
 docker run -it raft > output.log 2>&1  
 ```
 
+## Explaination
+
+![](./assets/diagram.png)
+
+Server states involve a system where certain servers, known as `followers`, are designed to only react to requests originating from other servers. In this setup, if a `follower` server remains inactive and does not receive any form of communication for a certain period, it transitions into a candidate state. This `candidate` server then takes the initiative to initiate an election process.
+
+During the election, the `candidate` server seeks support from its peers within the cluster. To become the new `leader`, a `candidate` must garner votes from more than half of the total servers in the cluster, establishing a majority consensus. Once a `candidate` successfully collects enough votes and achieves this majority threshold, it assumes the role of the new `leader` server.
+
+Leadership within this framework is characterized by stability until a leader server encounters a failure or experiences some sort of issue that prevents it from functioning properly. Upon such an event, the system would then trigger a new election process to identify and establish a successor leader server, ensuring the continued operational integrity of the system.
+
 ### Reference 
 
 - [Raft Research Paper](https://raft.github.io/raft.pdf)
