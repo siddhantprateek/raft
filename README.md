@@ -184,7 +184,7 @@ docker build --tag raft .
 docker run -it raft > output.log 2>&1  
 ```
 
-## Explaination
+## Explanation
 
 ![](./assets/diagram.png)
 
